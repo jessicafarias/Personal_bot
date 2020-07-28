@@ -4,7 +4,7 @@ class Jokes
             1 => 'I ate a clock yesterday, it was very time-consuming.',
             2 => 'Did you hear about the crook who stole a calendar? He got twelve months.',
             3 => 'Did you hear about the semi-colon that broke the law? He was given two consecutive sentences.',
-            4 => 'I can still remember a time when I the humanity knew more than a bot.' }
+            4 => 'I can still remember a time when the humanity knew more than a bot.' }
 
   def initialize(id)
     @id = id

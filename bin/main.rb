@@ -2,7 +2,6 @@
 require './lib/telegram/bot'
 require './lib/jokes'
 require './lib/messages'
-require './lib/Quotes'
 
 def background_run_at(time, message)
   fork do

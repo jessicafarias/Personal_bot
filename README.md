@@ -28,12 +28,14 @@ To run the Rspec and check for testing cases write the following command on the 
 rspec 
 ``` 
 
-## Screenshot and instructions
+## Instructions
 1. Read careful
-![screenshot](assets/images/screenshot2.jpeg)
 2. Clic on "start" and automaticly you will write "/start" and the bot will ask you for your name
 3. Write your name to display a joke
 4. Write "/daily 04:26" to programm a daily inspirational quote
+
+## Screenshots
+![screenshot](assets/images/screenshot2.jpeg)
 ![screenshot](assets/images/screenshot.jpeg)
 
 ## Demo Link of Enumerables Project
