@@ -3,7 +3,9 @@ AllCops:
     - "README.md"
     - "Guardfile"
     - "Rakefile"
-
+    - "lib/telegram/bot/api.rb"
+    - "lib/telegram/bot/exceptions/response_error.rb"
+    - "lib/telegram/bot/client.rb"
   DisplayCopNames: true
 
 Layout/LineLength:
