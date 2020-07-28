@@ -3,12 +3,11 @@ require './lib/telegram/bot'
 require './lib/jokes'
 require './lib/messages'
 
-
-puts "Chat whit the bot here:"
-puts "https://web.telegram.org/#/im?p=@jessibot_bot" 
+puts 'Chat whit the bot here:'
+puts 'https://web.telegram.org/#/im?p=@jessibot_bot'
 def background_run_at(time, message)
   fork do
-    puts "Daily inspirational quote programmed at #{ time}hr"
+    puts "Daily inspirational quote programmed at #{time}hr"
     sleep(1) until Time.now.strftime('%R') == Time.new.strftime(time.to_s)
     send_answer(message)
   end
@@ -18,7 +17,7 @@ def send_answer(message)
   token = '1261117312:AAFT9RGr5Dp-yhjdGD4yq7u_eTl45o2lQow'
   Telegram::Bot::Client.run(token) do |bot|
     bot.api.send_message(chat_id: message.chat.id, text: DailyQuotes.request_quote.to_s)
-    puts "The daily inspirational quote is already sended"
+    puts 'The daily inspirational quote is already sended'
     sleep(60)
     form_response_again(message)
   end
@@ -32,14 +31,13 @@ def form_response_again(message)
     background_run_at(@num, message)
     puts "The next daily quote will send at #{@num} hr"
     @str = "You will receive your daily quotes at #{@num[0, 2]} hrs and #{@num[3, 5]} min"
-    # @str = sum([Time.now, 5])
   end
   @str
 end
 
 def form_response_set(message)
   @num = message.text[7, 12]
-  if @num.nil? || (@num.length<5)
+  if @num.nil? || (@num.length < 5)
     @str = 'Sorry I do not understand try to use this format :/daily 21:30'
   else
     background_run_at(@num, message)

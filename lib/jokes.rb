@@ -1,7 +1,7 @@
 class Jokes
   attr_reader :id
-  @joke = { 0 => 'The cool part about naming your kid is you don’t '+
-    'have to add six numbers to make sure the name is available',
+  @joke = { 0 => 'The cool part about naming your kid is you don’t ' \
+                 'have to add six numbers to make sure the name is available',
             1 => 'I ate a clock yesterday, it was very time-consuming.',
             2 => 'Did you hear about the crook who stole a calendar? He got twelve months.',
             3 => 'Did you hear about the semi-colon that broke the law? He was given two consecutive sentences.',
