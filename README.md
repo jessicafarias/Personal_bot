@@ -1,4 +1,4 @@
-# Personal_bot
+# Telegram bot
 A bot developed in Ruby for Telegram
 
 ## Built With
@@ -7,18 +7,33 @@ Ruby 2.7.0
 
 ## Getting Started
 
-​To get a local copy up and running follow these simple example steps.​ 
+To get a local copy up and running follow these simple example steps.
 
-``` 
-Git clone https://github.com/jessicafarias/Personal_bot.git
-``` 
+1. Open the terminal comand line window
+2. `git clone https://github.com/jessicafarias/Personal_bot.git`
+3. Open the spec folder and run the personal bot
+4. Enjoy!
+
 ## RUN PERSONAL BOT
 
-To inicialize the telegram bot just write in your terminal run the main executable file.
+To inicialize the telegram bot just write the following command on the root folder.
 
 ```ruby 
 bin/main.rb 
 ``` 
+
+## Instructions
+1. Open Telegram the program provides you the link of the bot
+2. Clic on "start" and automaticly you will write "/start" and the bot will ask you for your name
+3. Write your name to display a joke
+4. Write "/daily 20:30" to programm a daily inspirational quote 8:30pm every day
+5. Verify the terminal displaying messages of the modification made by the user.
+
+## Screenshots
+![screenshot](assets/images/screenshot2.jpeg)
+![screenshot](assets/images/screenshot.jpeg)
+![screenshot](assets/images/screenshot3.jpeg)
+
 
 ## RUN TEST
 
@@ -28,26 +43,16 @@ To run the Rspec and check for testing cases write the following command on the 
 rspec 
 ``` 
 
-## Instructions
-1. Read careful
-2. Clic on "start" and automaticly you will write "/start" and the bot will ask you for your name
-3. Write your name to display a joke
-4. Write "/daily 04:26" to programm a daily inspirational quote
-
-## Screenshots
-![screenshot](assets/images/screenshot2.jpeg)
-![screenshot](assets/images/screenshot.jpeg)
-
 ## Demo Link of Enumerables Project
 
-[Live Demo Link](https://web.telegram.org/#/im?p=@jessibot_bot).
+[Bot Link](https://web.telegram.org/#/im?p=@jessibot_bot).
 
 ## Built With
 
 - Ruby
 - Rubocop
 - Rspec
-- gem 'telegram-bot-ruby'
+- telegram-bot-ruby library
 
 ## Authors
 
@@ -57,14 +62,6 @@ rspec
 - Twitter: [@FariasRosado](https://twitter.com/FariasRosado)
 - Linkedin: [jessica-michelle-farias-rosado](https://www.linkedin.com/in/jessica-michelle-farias-rosado/)
 
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-1. Open the terminal comand line window
-2. `git clone https://github.com/jessicafarias/Personal_bot.git`
-3. Open the spec folder and execute the bubble_spec.rb script
-4. Enjoy!
 
 ## 🤝 Contributing
 
