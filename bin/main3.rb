@@ -17,7 +17,7 @@ def send_answer(message)
       bot.api.send_message(chat_id: message.chat.id, text: "#{DailyQuotes.request_quote}")
       sleep(60)
       form_response_again(message)
-      
+      bot.api.send_message(chat_id: message.chat.id, text: "Have a good day")
     end
 end
 
