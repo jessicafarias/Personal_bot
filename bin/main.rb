@@ -1,10 +1,17 @@
 #!/usr/bin/env ruby
 require './lib/telegram/bot'
+require './lib/Jokes'
+require './lib/Messages'
+require './lib/Quotes'
+
+p DailyQuotes.request_quote
+var = {1=>"SA", 2=>"asa"}
+p var.length
 
 token = '1261117312:AAFT9RGr5Dp-yhjdGD4yq7u_eTl45o2lQow'
-time = Time.now.strftime('%R')
-time2 = Time.new.strftime('22:32')
-p time.eql?(time2)
+#time = Time.now.strftime('%R')
+#time2 = Time.new.strftime('22:32')
+#p time.eql?(time2)
 #Crono.perform(YourJob).every 1.day, at: {hour: 8, min: 00}
 #class TestJob
 #    def perform
@@ -14,7 +21,7 @@ p time.eql?(time2)
 #129044546
 
 Telegram::Bot::Client.run(token) do |bot|
-  bot.api.send_message(chat_id: 1290445462, text: "Se supone que son las9") if (time.eql?(time2))
+  #bot.api.send_message(chat_id: 1290445462, text: "Se supone que son las9") if (time.eql?(time2))
   bot.listen do |message|
 
     case message.text
@@ -36,10 +43,10 @@ Telegram::Bot::Client.run(token) do |bot|
     end
   end
 
-  while message.class != Telegram::Bot::Types::Message do
-    p "shil"
-      var.api.send_message(chat_id: 1290445462, text: "Se supone que son las 10") if (time.eql?(time2))
-  end
+  #while message.class != Telegram::Bot::Types::Message do
+  #  p "shil"
+  #    var.api.send_message(chat_id: 1290445462, text: "Se supone que son las 10") if (time.eql?(time2))
+  #end
 
   # if(DateTime.)
   #   bot.api.send_message(chat_id: message.chat_id, text: "Le recordamos que estas todo feo"
