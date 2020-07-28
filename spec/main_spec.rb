@@ -1,5 +1,5 @@
-require '../lib/jokes'
-require '../lib/messages'
+require './lib/jokes'
+require './lib/messages'
 
 describe Jokes do
   describe '#jockes' do
