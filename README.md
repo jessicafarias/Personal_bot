@@ -1,5 +1,5 @@
 # Telegram bot
-A bot developed in Ruby for Telegram
+This bot is designed to send daily motivational messages and tell jokes every time the user types their name
 
 ## Built With
 
