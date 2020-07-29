@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-require './lib/telegram/bot'
-require './lib/jokes'
-require './lib/messages'
+require_relative './lib/telegram/bot'
+require_relative './lib/jokes'
+require_relative './lib/messages'
 
 puts 'Chat whit the bot here:'
 puts 'https://web.telegram.org/#/im?p=@jessibot_bot'
@@ -42,7 +42,6 @@ def form_response_set(message)
   else
     background_run_at(@num, message)
     @str = "You will receive your daily quotes at #{@num[0, 2]} hrs and #{@num[3, 5]} min"
-    # @str = sum([Time.now, 5])
   end
   @str
 end
