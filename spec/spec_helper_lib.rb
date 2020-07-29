@@ -1,1 +1,2 @@
-require_relative '../lib/telegram/bot'
+require 'telegram/bot'
+
