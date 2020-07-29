@@ -1,5 +1,5 @@
 RSpec.describe Telegram::Bot::Client do
-  let(:token)  { '1261117312:AAFT9RGr5Dp-yhjdGD4yq7u_eTl45o2lQow' }
+  let(:token) { '1261117312:AAFT9RGr5Dp-yhjdGD4yq7u_eTl45o2lQow' }
   let(:client) { described_class.new(token, options) }
 
   describe '#new' do
