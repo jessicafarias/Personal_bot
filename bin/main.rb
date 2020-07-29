@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-require_relative './lib/telegram/bot'
-require_relative './lib/jokes'
-require_relative './lib/messages'
+require_relative '../lib/telegram/bot'
+require_relative '../lib/jokes'
+require_relative '../lib/messages'
 
 puts 'Chat whit the bot here:'
 puts 'https://web.telegram.org/#/im?p=@jessibot_bot'
