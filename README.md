@@ -66,6 +66,40 @@ To run the Rspec and check for testing cases write the following command on the 
 rspec 
 ``` 
 
+```shell
+Telegram::Bot::Api
+  #call
+    returns hash
+    has status
+    has result
+    when token is invalid
+      testing an invalid token raises an error
+  #method_missing
+    responds to endpoints
+    when method name is in snake case
+      responds to snake-cased endpoints
+
+Telegram::Bot::Client
+  #new
+    with any options
+      accepts any option
+    with logger option
+      removes logger from options
+
+Telegram::Bot::Exceptions::ResponseError
+  verifying error in response
+
+Telegram::Bot
+  testing if telegram bot works
+
+Jokes
+  #jockes
+    request joke is a string
+    initialize testing
+  #dailyquotes
+    request quote is a string
+    initialize testing
+``` 
 ## Demo Links 
 
 - [Bot Link](https://web.telegram.org/#/im?p=@jessibot_bot)

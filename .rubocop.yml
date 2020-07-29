@@ -6,7 +6,6 @@ AllCops:
     - "lib/telegram/bot/api.rb"
     - "lib/telegram/bot/exceptions/response_error.rb"
     - "lib/telegram/bot/client.rb"
-    - "spec/lib/telegram/bot/exceptions/response_error_spec.rb"
   DisplayCopNames: true
 
 Layout/LineLength:
