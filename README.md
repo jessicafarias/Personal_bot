@@ -66,10 +66,10 @@ To run the Rspec and check for testing cases write the following command on the 
 rspec 
 ``` 
 
-## Demo Link of Enumerables Project
+## Demo Links 
 
-[Bot Link](https://web.telegram.org/#/im?p=@jessibot_bot).
-
+- [Bot Link](https://web.telegram.org/#/im?p=@jessibot_bot)
+- [Youtube video](https://www.youtube.com/watch?v=DGkzwaXBn2k)
 
 ## Authors
 
