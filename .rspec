@@ -1,3 +1,5 @@
 --require spec_helper.rb 
 --require spec_helper_lib.rb
 --format documentation
+--color
+

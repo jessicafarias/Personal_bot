@@ -15,5 +15,7 @@ jobs:
         run: |
           [ -f Gemfile ] && bundle --deployment
           gem install --no-document rspec:'~>3.0'
+          gem install telegram-bot-ruby
       - name: RSpec Report
-        run: rspec --require spec_helper.rb --require spec_helper_lib.rb --format documentation
+        run: rspec
+      
