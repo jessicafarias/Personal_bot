@@ -1,5 +1,5 @@
 # Telegram bot
-This bot is designed to send daily motivational messages and tell jokes every time the user types their name
+This Ruby-based project (OOP). The purpose of this project is to program daily inspirational quotes via Telegram. It also sends jokes whenever the user writes their own name.
 
 ## Built With
 
